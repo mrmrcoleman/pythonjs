@@ -1,0 +1,8 @@
+box: wercker-labs/docker
+
+build:
+    steps:
+      - script:
+         name: build pythonjs image
+         code: |-
+           sudo docker build -rm -t mrmrcoleman/pythonjs .
